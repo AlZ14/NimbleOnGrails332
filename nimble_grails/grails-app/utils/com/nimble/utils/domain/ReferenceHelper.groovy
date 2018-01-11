@@ -26,7 +26,8 @@ import com.nimble.domain.artifact.Artifact
 import com.nimble.domain.project.Project
 import javax.servlet.ServletContext
 import com.nimble.domain.reference.*
-import org.codehaus.groovy.grails.web.context.ServletContextHolder as SCH
+//import org.codehaus.groovy.grails.web.context.ServletContextHolder as SCH
+import grails.web.context.ServletContextHolder as SCH
 
 class ReferenceHelper {
 

@@ -22,7 +22,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 package com.nimble.service.file
 
 import javax.servlet.ServletContext
-import org.codehaus.groovy.grails.web.context.ServletContextHolder as SCH
+//import org.codehaus.groovy.grails.web.context.ServletContextHolder as SCH
+import grails.web.context.ServletContextHolder as SCH
 import com.nimble.domain.artifact.*
 import com.nimble.utils.file.CsvFileReader
 import com.nimble.domain.reference.RelationReference

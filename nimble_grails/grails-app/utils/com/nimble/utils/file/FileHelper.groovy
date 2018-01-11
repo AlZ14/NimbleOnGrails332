@@ -25,7 +25,8 @@ import com.nimble.domain.view.ApplicationControl
 import com.nimble.domain.artifact.*
 import com.nimble.domain.reference.*
 import javax.servlet.ServletContext
-import org.codehaus.groovy.grails.web.context.ServletContextHolder as SCH
+//import org.codehaus.groovy.grails.web.context.ServletContextHolder as SCH
+import grails.web.context.ServletContextHolder as SCH
 import com.nimble.service.file.CsvFileService
 
 class FileHelper {

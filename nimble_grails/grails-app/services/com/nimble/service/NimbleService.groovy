@@ -3,7 +3,8 @@ package com.nimble.service
 import com.nimble.utils.domain.ReferenceHelper
 import javax.servlet.ServletContext
 import com.nimble.domain.security.ApplicationUser
-import org.codehaus.groovy.grails.web.context.ServletContextHolder as SCH
+//import org.codehaus.groovy.grails.web.context.ServletContextHolder as SCH
+import grails.web.context.ServletContextHolder as SCH
 import com.nimble.domain.NimbleDomain
 import org.codehaus.groovy.grails.plugins.springsecurity.*
 
