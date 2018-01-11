@@ -80,8 +80,8 @@ class ApplicationUserApplicationRole extends NimbleDomain implements Serializabl
 	     table 'app_user_app_role'
          id column:'user_role_id'
        	 //id composite: ['applicationRole', 'applicationUser']
-         id generator:'hilo', params:[table:'hi_value',column:'next_value',max_lo:100]
-        	 
+         // TODO id generator:'hilo', params:[table:'hi_value',column:'next_value',max_lo:100]
+        	 id generator:'identity'
        	 applicationUser column:'user_id'
     	 applicationRole column:'role_id'
          dateCreated column:'create_dt' 

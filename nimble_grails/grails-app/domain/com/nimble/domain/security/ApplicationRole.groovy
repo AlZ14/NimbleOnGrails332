@@ -42,8 +42,8 @@ class ApplicationRole extends NimbleDomain {
     
       table 'application_role'
       id column:'role_id'
-      id generator:'hilo', params:[table:'hi_value',column:'next_value',max_lo:100]
-
+ // TODO    id generator:'hilo', params:[table:'hi_value',column:'next_value',max_lo:100]
+        id generator:'identity' 
       autoTimestamp true
       dateCreated column:'create_dt' 
       lastUpdate column:'update_dt'

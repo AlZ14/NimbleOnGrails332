@@ -58,7 +58,8 @@ class Project extends NimbleDomain {
    	  project_status_ref column:'project_status_ref_id'
     	  
       autoTimestamp true
-      id generator:'hilo', params:[table:'hi_value',column:'next_value',max_lo:100]
+//TODO       id generator:'hilo', params:[table:'hi_value',column:'next_value',max_lo:100]
+      id generator:'identity'
       dateCreated column:'create_dt' 
       lastUpdate column:'update_dt'
       version column:'system_assigned_version_nbr'

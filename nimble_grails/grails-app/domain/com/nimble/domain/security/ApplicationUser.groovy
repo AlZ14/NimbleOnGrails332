@@ -73,8 +73,8 @@ class ApplicationUser extends NimbleDomain {
       id column:'user_id'
       applicationRoles column:'user_id'
             
-      id generator:'hilo', params:[table:'hi_value',column:'next_value',max_lo:100]      
-      
+ // TODO     id generator:'hilo', params:[table:'hi_value',column:'next_value',max_lo:100]      
+      id generator:'identity' 
       username column:'user_login'
       enabled column:'active_ind' 
       enabled insertable: false, updateable: false

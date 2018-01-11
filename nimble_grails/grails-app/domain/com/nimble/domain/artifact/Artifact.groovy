@@ -128,7 +128,8 @@ class Artifact extends NimbleDomain {
       last_updated_baseline column:'last_updated_baseline_id'
       release column: 'release_id'
 
-      id generator:'hilo', params:[table:'hi_value',column:'next_value',max_lo:100]
+//TODO      id generator:'hilo', params:[table:'hi_value',column:'next_value',max_lo:100]
+      id generator:'identity'
       //version false /*FIXME turn version on*/
 
       autoTimestamp true

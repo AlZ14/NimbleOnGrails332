@@ -68,7 +68,8 @@ String query_name
       report_language_ref column:'report_language_ref_id'
    	  report_location_ref column:'report_location_ref_id'
 
-      id generator:'hilo', params:[table:'hi_value',column:'next_value',max_lo:100]
+//TODO      id generator:'hilo', params:[table:'hi_value',column:'next_value',max_lo:100]
+      id generator:'identity'
       //version false /*FIXME turn version on*/
 
       autoTimestamp true
