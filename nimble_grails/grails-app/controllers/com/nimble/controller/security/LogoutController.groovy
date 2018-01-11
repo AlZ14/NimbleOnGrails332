@@ -21,7 +21,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 package com.nimble.controller.security
 
-import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
+//import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
+import grails.plugin.springsecurity.SpringSecurityUtils
 
 class LogoutController {
 
