@@ -1,4 +1,4 @@
-<%@ page import="com.nimble.controller.project.*; com.nimble.controller.artifact.*; com.nimble.domain.artifact.*;com.nimble.utils.view.ViewHelper;grails.plugins.springsecurity.SecurityTagLib;" %>
+<%@ page import="com.nimble.controller.project.*; com.nimble.controller.artifact.*; com.nimble.domain.artifact.*;com.nimble.utils.view.ViewHelper;grails.plugin.springsecurity.SecurityTagLib;" %>
 <g:set var="viewHelper" value="${request.viewHelper}" />
 
 
