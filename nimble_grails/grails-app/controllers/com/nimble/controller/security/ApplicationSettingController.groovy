@@ -26,7 +26,7 @@ import com.nimble.service.security.ApplicationSettingService
 import com.nimble.controller.NimbleController
 import javax.servlet.ServletContext
 
-class ApplicationSettingController {	
+class ApplicationSettingController {
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
     def applicationSettingService                             
@@ -153,5 +153,5 @@ class ApplicationSettingController {
     	
     	servletContext["applicationSettings"] = appSettingsMap
 
-    }    
+    }
 }
