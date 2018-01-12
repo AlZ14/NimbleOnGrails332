@@ -43,10 +43,10 @@
 </style>
 </head>
 
-<body onload="document.forms['loginForm'].elements['j_username'].focus();">
+<body onload="document.forms['loginForm'].elements['username'].focus();">
 
 	<div id='login'>
-<img src="../images/logo_magneto.png" border="0"/><br><br>
+<asset:image src="logo_magneto.png" border="0"/><br><br>
 
 		<div class='inner'>
 			<g:if test='${flash.message}'>
@@ -56,11 +56,11 @@
 			<form action='${postUrl}' method='POST' id='loginForm' class='cssform' autocomplete='off'>
 				<p>
 					<label for='username'>Login ID</label>
-					<input type='text' class='text_' name='j_username' id='username' />
+					<input type='text' class='text_' name='username' id='username' />
 				</p>
 				<p>
 					<label for='password'>Password</label>
-					<input type='password' class='text_' name='j_password' id='password' />
+					<input type='password' class='text_' name='password' id='password' />
 				</p>
 				<p>
 					<label for='remember_me'>Remember me</label>
@@ -76,7 +76,7 @@
 <script type='text/javascript'>
 <!--
 (function(){
-	document.forms['loginForm'].elements['j_username'].focus();
+	document.forms['loginForm'].elements['username'].focus();
 })();
 // -->
 </script>
