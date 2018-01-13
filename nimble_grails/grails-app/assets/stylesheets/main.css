@@ -1,574 +1,422 @@
-/* FONT STACK */
-body,
-input, select, textarea {
-    font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    line-height: 1.1;
-}
-
-/* BASE LAYOUT */
-
-html {
-    background-color: #ddd;
-    background-image: -moz-linear-gradient(center top, #aaa, #ddd);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaa), color-stop(1, #ddd));
-    background-image: linear-gradient(top, #aaa, #ddd);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#aaaaaa', EndColorStr = '#dddddd');
-    background-repeat: no-repeat;
-    height: 100%;
-    /* change the box model to exclude the padding from the calculation of 100% height (IE8+) */
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-html.no-cssgradients {
-    background-color: #aaa;
-}
-
-html * {
-    margin: 0;
-}
-
 body {
-    background-color: #F5F5F5;
-    color: #333333;
-    overflow-x: hidden; /* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
-    -moz-box-shadow: 0 0 0.3em #424649;
-    -webkit-box-shadow: 0 0 0.3em #424649;
-    box-shadow: 0 0 0.3em #424649;
+font-family: Arial, Helvetica, sans-serif;
+color:black;
+background-color: #808080;
+/*float:left;*/
 }
 
-#grailsLogo {
-    background-color: #feb672;
+.login{
+color:DarkOrange;
+}	
+
+.separator{
+color:#E8E8E8;
 }
 
-a:hover, a:active {
-    outline: none; /* prevents outline in webkit on active links but retains it for tab focus */
+.logout{
+color:white;
 }
 
-h1, h2, h3 {
-    font-weight: normal;
-    font-size: 1.25em;
-    margin: 0.8em 0 0.3em 0;
+.logo_and_login{
+padding:0px;
+border-style:solid;
+border-color:red;
 }
 
-ul {
-    padding: 0;
+.sectionTitle{
+color:white;
+font-weight:bold;
+font-family: Arial, Helvetica, sans-serif;
+FONT-SIZE: 16px
+PADDING-LEFT: 9px;
 }
 
-img {
-    border: 0;
+.buttonTitle{
+color:white;
+font-family: Helvetica, Arial, sans-serif;
+FONT-SIZE: 13px;
+text-decoration:none;
 }
 
-/* GENERAL */
-
-#grailsLogo a {
-    display: inline-block;
-    margin: 1em;
+.buttonSelected{
+background-image:url(/animble_platform/images/button_tile_selected.png);
+text-align:center;
+padding-right:10px;
+padding-left:10px;
 }
 
-.content {
+.buttonSeperator{
+background-image:url(/animble_platform/images/button_seperator.png);
 }
 
-.content h1 {
-    border-bottom: 1px solid #CCCCCC;
-    margin: 0.8em 1em 0.3em;
-    padding: 0 0.25em;
+.buttonNotSelected{
+background-image:url(/animble_platform/images/button_tile_not_selected.png);
+text-align:center;
+padding-right:10px;
+padding-left:10px;
 }
 
-.scaffold-list h1 {
-    border: none;
+.menuDropdown{
+color:white;
+background-color:#404040;
 }
 
-.footer {
-    background: #424649;
-    color: #ffffff;
-    clear: both;
-    font-size: 0.8em;
-    margin-top: 1.5em;
-    padding: 1em;
-    min-height: 1em;
+.menubuttonSelected{
+background-image:url(/animble_platform/images/menu_bar_tile_selected.png);
+text-align:center;
+padding-top:0px;
+padding-bottom:0px;
+padding-right:10px;
+padding-left:10px;
+font-weight:bold;
 }
 
-.footer a {
-    color: #feb672;
+.menubuttonNotSelected{
+background-image:url(/animble_platform/images/menu_bar_tile.png);
+text-align:center;
+padding-top:0px;
+padding-bottom:0px;
+padding-right:10px;
+padding-left:10px;
+font-weight:bold;
 }
 
-.spinner {
-    background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
-    height: 16px;
-    width: 16px;
-    padding: 0.5em;
-    position: absolute;
-    right: 0;
-    top: 0;
-    text-indent: -9999px;
+.menubarTile{
+background-image:url(/animble_platform/images/menu_bar_tile.png);
+text-align:center;
+padding-top:0px;
+padding-bottom:0px;
+padding-right:10px;
+padding-left:10px;
+
 }
 
-/* NAVIGATION MENU */
-
-.nav {
-    zoom: 1;
+.menubuttonSeperator{
+background-image:url(/animble_platform/images/menu_bar_seperator.png);
 }
 
-.nav ul {
-    overflow: hidden;
-    padding-left: 0;
-    zoom: 1;
+
+.menu_bar{
+padding-top:15px;
 }
 
-.nav li {
-    display: block;
-    float: left;
-    list-style-type: none;
-    margin-right: 0.5em;
-    padding: 0;
+.searchbuttonSelected{
+background-image:url(/animble_platform/images/search_button_selected.png);
 }
 
-.nav a {
-    color: #666666;
-    display: block;
-    padding: 0.25em 0.7em;
-    text-decoration: none;
-    -moz-border-radius: 0.3em;
-    -webkit-border-radius: 0.3em;
-    border-radius: 0.3em;
+.searchbuttonNotSelected{
+background-image:url(/animble_platform/images/search_button_not_selected.png);
 }
 
-.nav a:active, .nav a:visited {
-    color: #666666;
+.searchInput {
+	border: 0px solid #FFFFFF;
+	background-color:White;
+	background-image:url('/animble_platform/images/search.png');
+	background-repeat:no-repeat;
+	background-position:right center;
+	color: Grey;
+	padding: 0;
+	margin: 0;
 }
 
-.nav a:focus, .nav a:hover {
-    background-color: #999999;
-    color: #ffffff;
-    outline: none;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+.blueline{
+background-image:url(/animble_platform/images/blue_tile.png);
 }
 
-.no-borderradius .nav a:focus, .no-borderradius .nav a:hover {
-    background-color: transparent;
-    color: #444444;
-    text-decoration: underline;
+.lightblueline{
+background-image:url(/animble_platform/images/light_blue_tile.png);
 }
 
-.nav a.home, .nav a.list, .nav a.create {
-    background-position: 0.7em center;
-    background-repeat: no-repeat;
-    text-indent: 25px;
+.breadcrumbs_background{
+background-image:url(/animble_platform/images/breadcrumbs_background.png);
+padding-top:4px;
+padding-bottom:4px;
+padding-right:3px;
+padding-left:3px;
 }
 
-.nav a.home {
-    background-image: url(../images/skin/house.png);
+.breadcrumb_gray_box{
+background-image:url(/animble_platform/images/breadcrumb_box.png);
+padding-top:2px;
+padding-bottom:2px;
+padding-right:10px;
+padding-left:4px;
 }
 
-.nav a.list {
-    background-image: url(../images/skin/database_table.png);
+.breadcrumb_blue_box{
+background-image:url(/animble_platform/images/light_blue_tile.png);
+padding-top:2px;
+padding-bottom:2px;
+padding-right:10px;
+padding-left:4px;
 }
 
-.nav a.create {
-    background-image: url(../images/skin/database_add.png);
+A:link {
+text-decoration: none;
+color: white;
+font-family: Helvetica, Arial, sans-serif;
 }
 
-.nav li.dropdown.open ul.dropdown-menu {
-    background-color: #424649;
+A:visited {
+text-decoration: none;
+color: white;
+font-family: Helvetica, Arial, sans-serif;
 }
 
-/* CREATE/EDIT FORMS AND SHOW PAGES */
-
-fieldset,
-.property-list {
-    margin: 0.6em 1.25em 0 1.25em;
-    padding: 0.3em 1.8em 1.25em;
-    position: relative;
-    zoom: 1;
-    border: none;
+A:active {
+text-decoration: none;
+color: white;
+font-family: Helvetica, Arial, sans-serif;
 }
 
-.property-list .fieldcontain {
-    list-style: none;
-    overflow: hidden;
-    zoom: 1;
+A:hover {
+text-decoration:none;
+color: white;
+font-family: Helvetica, Arial, sans-serif;
 }
 
-.fieldcontain {
-    margin-top: 1em;
+.breadcrumb_link A:link{
+color:white;
+font-family: Helvetica, Arial, sans-serif;
+FONT-SIZE: 10px;
 }
 
-.fieldcontain label,
-.fieldcontain .property-label {
-    color: #666666;
-    text-align: right;
-    width: 25%;
+.breadcrumb_link A:visited{
+color:white;
+font-family: Helvetica, Arial, sans-serif;
+FONT-SIZE: 12px;
 }
 
-.fieldcontain .property-label {
-    float: left;
+.breadcrumb_link A:active{
+color:white;
+font-family: Helvetica, Arial, sans-serif;
+FONT-SIZE: 12px;
 }
 
-.fieldcontain .property-value {
-    display: block;
-    margin-left: 27%;
+.breadcrumb_link A:hover{
+text-decoration:under-line;
+color:white;
+font-family: Helvetica, Arial, sans-serif;
+FONT-SIZE: 12px;
 }
 
-label {
-    cursor: pointer;
-    display: inline-block;
-    margin: 0 0.25em 0 0;
+.dialog{
+background-color: #FFFFFF;
 }
 
-input, select, textarea {
-    background-color: #fcfcfc;
-    border: 1px solid #cccccc;
-    font-size: 1em;
-    padding: 0.2em 0.4em;
+.prop{
+height:20px;
 }
 
-select {
-    padding: 0.2em 0.2em 0.2em 0;
+.name{
+color:darkgrey;
+padding-right:10px;
+padding-left:10px;
+width:150px;
 }
 
-select[multiple] {
-    vertical-align: top;
+.value{
+padding-right:10px;
+padding-left:10px;
 }
 
-textarea {
-    width: 250px;
-    height: 150px;
-    overflow: auto; /* IE always renders vertical scrollbar without this */
-    vertical-align: top;
+.nav{
+background-color: #FFFFFF;
+padding-right:10px;
+padding-left:10px;
+padding-bottom:20px;
 }
 
-input[type=checkbox], input[type=radio] {
-    background-color: transparent;
-    border: 0;
-    padding: 0;
+.landing{
+
 }
 
-input:focus, select:focus, textarea:focus {
-    background-color: #ffffff;
-    border: 1px solid #eeeeee;
-    outline: 0;
-    -moz-box-shadow: 0 0 0.5em #ffffff;
-    -webkit-box-shadow: 0 0 0.5em #ffffff;
-    box-shadow: 0 0 0.5em #ffffff;
+.tabContainer{
+background-color: #FFFFFF;
+border-bottom:0px #FFFFFF;
 }
 
-.required-indicator {
-    color: #cc0000;
-    display: inline-block;
-    font-weight: bold;
-    margin-left: 0.3em;
-    position: relative;
-    top: 0.1em;
+.body{
 }
 
-ul.one-to-many {
-    display: inline-block;
-    list-style-position: inside;
-    vertical-align: top;
+.report_params{
+background-color: #FFFFFF;
 }
 
-ul.one-to-many li.add {
-    list-style-type: none;
-}
-
-/* EMBEDDED PROPERTIES */
-
-fieldset.embedded {
-    background-color: transparent;
-    border: 1px solid #CCCCCC;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-fieldset.embedded legend {
-    margin: 0 1em;
-}
-
-/* MESSAGES AND ERRORS */
-
-.errors,
-.message {
-    font-size: 0.8em;
-    line-height: 2;
-    margin: 1em 2em;
-    padding: 0.25em;
-}
-
-.message {
-    background: #f3f3ff;
-    border: 1px solid #b2d1ff;
-    color: #006dba;
-    -moz-box-shadow: 0 0 0.25em #b2d1ff;
-    -webkit-box-shadow: 0 0 0.25em #b2d1ff;
-    box-shadow: 0 0 0.25em #b2d1ff;
+.report_body{
+background-color: #FFFFFF;
+height:300px;
 }
 
 .errors {
-    background: #fff3f3;
-    border: 1px solid #ffaaaa;
-    color: #cc0000;
-    -moz-box-shadow: 0 0 0.25em #ff8888;
-    -webkit-box-shadow: 0 0 0.25em #ff8888;
-    box-shadow: 0 0 0.25em #ff8888;
-}
-
-.errors ul,
-.message {
-    padding: 0;
-}
-
-.errors li {
-    list-style: none;
-    background: transparent url(../images/skin/exclamation.png) 0.5em 50% no-repeat;
-    text-indent: 2.2em;
+background-color: #FF9FA2;
+border: solid 1px #CC0005;
 }
 
 .message {
-    background: transparent url(../images/skin/information.png) 0.5em 50% no-repeat;
-    text-indent: 2.2em;
+background-color: #8DE983;
+border: solid 1px #21AD2C;
+padding-right:0px;
+padding-left:0px;
+padding-top:3px;
+padding-bottom:3px;
 }
 
-/* form fields with errors */
-
-.error input, .error select, .error textarea {
-    background: #fff3f3;
-    border-color: #ffaaaa;
-    color: #cc0000;
+.paginateButtons {
+background-color: #FFFFFF;
+color:white;
+padding-right:10px;
+padding-left:10px;
+padding-top:10px;
+padding-bottom:10px;
 }
 
-.error input:focus, .error select:focus, .error textarea:focus {
-    -moz-box-shadow: 0 0 0.5em #ffaaaa;
-    -webkit-box-shadow: 0 0 0.5em #ffaaaa;
-    box-shadow: 0 0 0.5em #ffaaaa;
+.odd{
+background-color:#FFFFFF;
+padding:4px 4px 4px 4px;
+height: 25px;
 }
 
-/* same effects for browsers that support HTML5 client-side validation (these have to be specified separately or IE will ignore the entire rule) */
-
-input:invalid, select:invalid, textarea:invalid {
-    background: #fff3f3;
-    border-color: #ffaaaa;
-    color: #cc0000;
+.even{
+background-image:url(/animble_platform/images/light_blue_tile.png);
+padding:4px 4px 4px 4px;
+height: 25px;
 }
 
-input:invalid:focus, select:invalid:focus, textarea:invalid:focus {
-    -moz-box-shadow: 0 0 0.5em #ffaaaa;
-    -webkit-box-shadow: 0 0 0.5em #ffaaaa;
-    box-shadow: 0 0 0.5em #ffaaaa;
+.oddSearchResult{
+background-color:#FFFFFF;
+padding:4px 4px 4px 4px;
 }
 
-/* TABLES */
-
-table {
-    border-top: 1px solid #DFDFDF;
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 1em;
+.evenSearchResult{
+background-image:url(/animble_platform/images/light_blue_tile.png);
+padding:4px 4px 4px 4px;
 }
 
-tr {
-    border: 0;
+.oddLink:link{color:#1B8C12;}
+.oddLink:visited {color:#1B8C12;}
+.oddLink:hover {color:#1B8C12;}
+.oddLink:active {color:#1B8C12;}
+
+.sortable{
+background-color: DarkGrey;
+font-weight:bold;
+padding-top:4px;
+padding-bottom:4px;
+padding-right:10px;
+padding-left:4px;
+height: 25px;
 }
 
-tr>td:first-child, tr>th:first-child {
-    padding-left: 1.25em;
+th{
+background-color: DarkGrey;
+font-weight:bold;
+padding:4px 4px 4px 4px;
+height: 25px;
+text-align:center;
 }
 
-tr>td:last-child, tr>th:last-child {
-    padding-right: 1.25em;
+.currentStep{
+background-color: DarkGrey;
+color:black;
+padding-right:5px;
+padding-left:5px;
 }
 
-td, th {
-    line-height: 1.5em;
-    padding: 0.5em 0.6em;
-    text-align: left;
-    vertical-align: top;
+.step{
+background-color: DarkGrey;
+padding-right:5px;
+padding-left:5px;
+margin: 5px;
 }
 
-th {
-    background-color: #efefef;
-    background-image: -moz-linear-gradient(top, #ffffff, #eaeaea);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(1, #eaeaea));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr = '#ffffff', EndColorStr = '#eaeaea');
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#eaeaea')";
-    color: #666666;
-    font-weight: bold;
-    line-height: 1.7em;
-    padding: 0.2em 0.6em;
+.nextLink{
+background-color: DarkGrey;
+padding-right:5px;
+padding-left:5px;
 }
 
-thead th {
-    white-space: nowrap;
+.prevLink {
+background-color: DarkGrey;
+padding-right:5px;
+padding-left:5px;
 }
 
-th a {
-    display: block;
-    text-decoration: none;
+LI.bluegray_bullet {
+	list-style-image:url('/animble_platform/images/bullet.png');
 }
 
-th a:link, th a:visited {
-    color: #666666;
+/* ---- calendar and input styles begin ---- */
+
+input.DatePicker{
+	display: block;
+	cursor: pointer;
 }
-
-th a:hover, th a:focus {
-    color: #333333;
+.dp_container{
+	position: relative;
+	padding: 0;
+	z-index: 500;
 }
-
-th.sortable a {
-    background-position: right;
-    background-repeat: no-repeat;
-    padding-right: 1.1em;
+.dp_cal{
+	background-color: #fff;
+	border: 1px solid #000000;
+	position: absolute;
+	width: 177px;
+	top: 24px;
+	left: 0;
+	margin: 0px 0px 3px 0px;
 }
-
-th.asc a {
-    background-image: url(../images/skin/sorted_asc.gif);
+.dp_cal table{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
-th.desc a {
-    background-image: url(../images/skin/sorted_desc.gif);
+.dp_cal select{
+	margin: 2px 3px;
+	font-size: 11px;
 }
-
-.odd {
-    background: #f7f7f7;
+.dp_cal select option{
+	padding: 1px 3px;
 }
-
-.even {
-    background: #ffffff;
+.dp_cal th,
+.dp_cal td{
+	width: 14.2857%;
+	text-align: center;
+	font-size: 11px;
+	padding: 2px 0;
 }
-
-th:hover, tr:hover {
-    background: #feb672;
+.dp_cal th{
+	border: solid #000000;
+	border-width: 1px 0;
+	color: #797774;
+	background: #E3E1E4;
+	font-weight: bold;
 }
-
-/* PAGINATION */
-
-.pagination {
-    border-top: 0;
-    margin: 0.8em 1em 0.3em;
-    padding: 0.3em 0.2em;
-    text-align: center;
-    -moz-box-shadow: 0 0 3px 1px #AAAAAA;
-    -webkit-box-shadow: 0 0 3px 1px #AAAAAA;
-    box-shadow: 0 0 3px 1px #AAAAAA;
-    background-color: #EFEFEF;
+.dp_cal td{
+	cursor: pointer;
 }
-
-.pagination a,
-.pagination .currentStep {
-    color: #666666;
-    display: inline-block;
-    margin: 0 0.1em;
-    padding: 0.25em 0.7em;
-    text-decoration: none;
-    -moz-border-radius: 0.3em;
-    -webkit-border-radius: 0.3em;
-    border-radius: 0.3em;
+.dp_cal thead th{
+	background: #E3E1E4;
 }
-
-.pagination a:hover, .pagination a:focus,
-.pagination .currentStep {
-    background-color: #999999;
-    color: #ffffff;
-    outline: none;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+.dp_cal td.dp_roll{
+	color: #ffffff;
+	background: #000000;
 }
-
-.no-borderradius .pagination a:hover, .no-borderradius .pagination a:focus,
-.no-borderradius .pagination .currentStep {
-    background-color: transparent;
-    color: #444444;
-    text-decoration: underline;
+/* must have this for the IE6 select box hiding */
+.dp_hide{
+	visibility: hidden;
 }
-
-/* ACTION BUTTONS */
-
-.buttons {
-    background-color: #efefef;
-    overflow: hidden;
-    padding: 0.3em;
-    -moz-box-shadow: 0 0 3px 1px #aaaaaa;
-    -webkit-box-shadow: 0 0 3px 1px #aaaaaa;
-    box-shadow: 0 0 3px 1px #aaaaaa;
-    margin: 0.1em 0 0 0;
-    border: none;
+.dp_empty{
+	background: #057FC2;
 }
-
-.buttons input,
-.buttons a {
-    background-color: transparent;
-    border: 0;
-    color: #666666;
-    cursor: pointer;
-    display: inline-block;
-    margin: 0 0.25em 0;
-    overflow: visible;
-    padding: 0.25em 0.7em;
-    text-decoration: none;
-
-    -moz-border-radius: 0.3em;
-    -webkit-border-radius: 0.3em;
-    border-radius: 0.3em;
+.dp_today{
+/*
+	color: #ffffff;
+	background: #000000;
+*/
 }
-
-.buttons input:hover, .buttons input:focus,
-.buttons a:hover, .buttons a:focus {
-    background-color: #999999;
-    color: #ffffff;
-    outline: none;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+.dp_selected{
+	color: #ffffff;
+	background: 000000;
 }
-
-.no-borderradius .buttons input:hover, .no-borderradius .buttons input:focus,
-.no-borderradius .buttons a:hover, .no-borderradius .buttons a:focus {
-    background-color: transparent;
-    color: #444444;
-    text-decoration: underline;
-}
-
-.buttons .delete, .buttons .edit, .buttons .save {
-    background-position: 0.7em center;
-    background-repeat: no-repeat;
-    text-indent: 25px;
-}
-
-.buttons .delete {
-    background-image: url(../images/skin/database_delete.png);
-}
-
-.buttons .edit {
-    background-image: url(../images/skin/database_edit.png);
-}
-
-.buttons .save {
-    background-image: url(../images/skin/database_save.png);
-}
-
-a.skip {
-    position: absolute;
-    left: -9999px;
-}
-
-.grails-logo-container {
-    background: #7c7c7c no-repeat 50% 30%;
-    margin-bottom: 20px;
-    color: white;
-    height:300px;
-    text-align:center;
-}
-
-img.grails-logo {
-    height:340px;
-    margin-top:-10px;
-}
+/* ---- calendar and input styles end ---- */

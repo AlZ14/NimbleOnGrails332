@@ -81,9 +81,17 @@ grails:
                 scriptlets: html
                 taglib: none
                 staticparts: none
+    resources:
+        #pattern: '/**'
+
+    assets:
+        storagePath: /tempcopy
+        from: '/src/main'
+
 endpoints:
     jmx:
         unique-names: true
+
 
 ---
 hibernate:
