@@ -32,7 +32,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 // }
 
 /*
- AZ left out in favour of yml for now...
+ TODO , this should all be application.yml now... need to check both are equivalent
 grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
 grails.mime.use.accept.header = false
 grails.mime.types = [ html: ['text/html','application/xhtml+xml'],
@@ -56,20 +56,23 @@ grails.converters.encoding="UTF-8"
 // enable Sitemesh preprocessing of GSP pages
 grails.views.gsp.sitemesh.preprocess = true
 
-/*
+
 
 // scaffolding templates configuration
 grails.scaffolding.templates.domainSuffix = 'Instance'
 
+//TODO check if these need to be re-enabled...
 // Set to false to use the new Grails 1.2 JSONBuilder in the render method
-grails.json.legacy.builder=false
+//grails.json.legacy.builder=false
 // enabled native2ascii conversion of i18n properties files
-grails.enable.native2ascii = true
+//grails.enable.native2ascii = true
 // whether to install the java.util.logging bridge for sl4j. Disable fo AppEngine!
-grails.logging.jul.usebridge = true
+//grails.logging.jul.usebridge = true
+
 // packages to include in Spring bean scanning
 grails.spring.bean.packages = []
 
+/*
 // set per-environment serverURL stem for creating absolute links
 environments {
     production {
@@ -110,7 +113,8 @@ log4j = {
 }
 
 
-(AZ left out in favour of yml for now) */  
+(AZ left out in favour of yml for now) */
+
 /* was..
 //Added by the Spring Security Core plugin:
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.nimble.domain.security.ApplicationUser'
@@ -125,6 +129,7 @@ grails.plugin.springsecurity.authority.className = 'com.nimble.domain.security.A
 grails.plugin.springsecurity.requestMap.className = 'com.nimble.domain.security.ApplicationPrivilege'
 grails.plugin.springsecurity.securityConfigType = 'Requestmap'
 
+//TODO FIXME keep using the old (and less secure) algorithm for now while we still have old hashed passwords in the database
 grails.plugin.springsecurity.password.algorithm = 'SHA-256'
 grails.plugin.springsecurity.password.hash.iterations = 1
 

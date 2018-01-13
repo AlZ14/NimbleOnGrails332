@@ -72,7 +72,7 @@ grails:
         encoding: UTF-8
     views:
         default:
-            codec: html
+            codec: none #html
         gsp:
             encoding: UTF-8
             htmlcodec: xml
@@ -81,12 +81,6 @@ grails:
                 scriptlets: html
                 taglib: none
                 staticparts: none
-    resources:
-        #pattern: '/**'
-
-    assets:
-        storagePath: /tempcopy
-        from: '/src/main'
 
 endpoints:
     jmx:
