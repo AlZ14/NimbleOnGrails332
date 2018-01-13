@@ -51,12 +51,12 @@ dependencies {
     compile "org.hibernate:hibernate-core:5.1.5.Final"
     compile "org.grails.plugins:gsp"
 
-    //compile "org.grails.web.sitemesh"
-    // https://mvnrepository.com/artifact/org.sitemesh/sitemesh
-//    compile group: 'org.sitemesh', name: 'sitemesh', version: '3.0.1'
-
+    //compile "org.grails.web.sitemesh"     //Sitemesh is now included in Grails
     compile "org.grails.plugins:spring-security-core:3.2.0"
+    //http://grails.org/plugin/searchable14
     //compile "org.grails.plugins:searchable:0.6.9"
+    //compile 'org.grails:grails-plugin-filters:3.0.12'
+    compile "org.grails.plugins:jasper:2.1.0.RC1"
 
     console "org.grails:grails-console"
     profile "org.grails.profiles:web"
