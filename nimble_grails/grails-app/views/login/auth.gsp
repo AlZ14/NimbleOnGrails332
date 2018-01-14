@@ -46,7 +46,7 @@
 <body onload="document.forms['loginForm'].elements['username'].focus();">
 
 	<div id='login'>
-<asset:image src="logo_magneto.png" border="0"/><br><br>
+    <asset:image src="logo_magneto.png" border="0"/><br><br>
 
 		<div class='inner'>
 			<g:if test='${flash.message}'>

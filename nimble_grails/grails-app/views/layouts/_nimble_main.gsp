@@ -6,10 +6,10 @@
 <head>
 <title>aNimble Platform</title>
     
-<link rel="stylesheet" type="text/css" href="/${grailsApplication.metadata['app.name']}/js/dojoroot/dijit/themes/tundra/tundra.css" />    
-<link rel="stylesheet" type="text/css" href="/${grailsApplication.metadata['app.name']}/js/dojoroot/dojo/resources/dojo.css" />
-<link rel="stylesheet" type="text/css" href="/${grailsApplication.metadata['app.name']}/css/main.css" />
-<script type="text/javascript" src="/${grailsApplication.metadata['app.name']}/js/dojoroot/dojo/dojo.js" djConfig="parseOnLoad: true"></script>
+<asset:stylesheet src="javascripts/dojoroot/dijit/themes/tundra/tundra.css"/>
+<asset:stylesheet src="dojoroot/dojo/resources/dojo.css" />
+<asset:stylesheet src="main.css" />
+<asset:javascript src="dojoroot/dojo/dojo.js" djConfig="parseOnLoad: true" />
 <script type="text/javascript">
    dojo.require("dojo.parser");
    dojo.require("dijit.layout.BorderContainer");
@@ -29,10 +29,10 @@
    dojo.require("dijit.tree.dndSource");   
    dojo.require("dojo.store.JsonRest");   
 </script>
-<script type="text/javascript" src="/${grailsApplication.metadata['app.name']}/js/tiny_mce/tiny_mce.js"></script>
-<script type="text/javascript" src="/${grailsApplication.metadata['app.name']}/js/jscalendar/mootools.v1.11.js"></script>
-<script type="text/javascript" src="/${grailsApplication.metadata['app.name']}/js/jscalendar/DatePicker.js"></script>
-<script type="text/javascript" src="/${grailsApplication.metadata['app.name']}/js/application.js"></script>
+<asset:javascript src="tiny_mce/tiny_mce.js" />
+<asset:javascript src="jscalendar/mootools.v1.11.js" />
+<asset:javascript src="jscalendar/DatePicker.js" />
+<asset:javascript src="application.js" />
 <script type="text/javascript">
 	var serverURL = "/${grailsApplication.metadata['app.name']}";			
 </script>
@@ -49,7 +49,7 @@
 <tr>
 
 <td width="50%">
-<img src="/${grailsApplication.metadata['app.name']}/images/logo_magneto.png" border="0"/>
+<asset:image src="logo_magneto.png" border="0"/>
 </td>
 
 <td align="right" width="50%">
